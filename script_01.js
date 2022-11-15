@@ -10,11 +10,7 @@
 // Parameter --> funktion getSentence([ ...], "Q"){ ...}
 
 /*** Funktion mit Array als Parameter */
-// mögliche Tests:
-output(getSentence(["Ich","bin","Max"],"S"));
-output(getSentence(["Bist","du","Max"],"Q"));
-output(getSentence(["Ich","bin"],"E"));
-output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
+
 
 
 /********************************************************/
@@ -25,6 +21,12 @@ output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwo
 /********************************************************/
 /*******                Example 01                *******/
 /********************************************************/
+    // mögliche Tests:
+        output(getSentence( [ "Ich","bin","Max"],"S"));
+        output(getSentence( [ "Bist","du","Max"],"Q"));
+        output(getSentence( [ "Ich","bin"],"E"));
+        output(getSentence( [ "Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
+
     // get the strings
         function getSentence( iArr, iSng ) {
             let iArrStr = "";
@@ -50,3 +52,60 @@ output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwo
                     return ".";
             }
         }
+
+/********************************************************/
+/*******                Example 02                *******/
+/********************************************************/
+    // mögliche Tests:
+        output(getSentence2( [ "Ich","bin","Max"],"S"));
+        output(getSentence2( [ "Bist","du","Max"],"Q"));
+        output(getSentence2( [ "Ich","bin"],"E"));
+        output(getSentence2( [ "Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
+    // get the strings
+        function getMarks2( iArr, iSng ) {
+            let iArrStr = "";
+
+            for ( let i = 0; i < iArr.length; i ++ ) {
+                if ( i < iArr.length - 1 ) {
+                    iArrStr += iArr[ i ] + " ";
+                } else {
+                    iArrStr += iArr[ i ];
+                }
+            }
+            return iArrStr + iSng;        
+        }
+
+    // get the marks
+        function getSentence2( iArr, iSng ) {
+            switch ( iSng ) {
+                case "Q":
+                    return getMarks2( iArr, "?" );
+                case "E":
+                    return getMarks2( iArr, "!" );
+                default:
+                    return getMarks2( iArr, "." );
+            }
+        }
+
+/********************************************************/
+/*******                Example 03                *******/
+/********************************************************/
+    // mögliche Tests:
+    output(getSentence3( [ "Ich","bin","Max"],"S"));
+    output(getSentence3( [ "Bist","du","Max"],"Q"));
+    output(getSentence3( [ "Ich","bin"],"E"));
+    output(getSentence3( [ "Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
+// get the strings
+    function getSentence3( iArr, iSng ) {
+        let iArrStr = "";
+        let iSngStr = ( iSng == "Q" ) ? "?" : ( iSng == "E" ) ? "!" : ".";
+
+        for ( let i = 0; i < iArr.length; i ++ ) {
+            if ( i < iArr.length - 1 ) {
+                iArrStr += iArr[ i ] + " ";
+            } else {
+                iArrStr += iArr[ i ];
+            }
+        }
+        return iArrStr + iSngStr;
+    }
