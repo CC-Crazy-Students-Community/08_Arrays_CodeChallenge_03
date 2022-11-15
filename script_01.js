@@ -17,32 +17,36 @@ output(getSentence(["Ich","bin"],"E"));
 output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
 
 
-/*** Example 01  */
+/********************************************************/
+/*******                  Output                  *******/
+/********************************************************/
+    // output
+        function output( outputStr1 ) { console.log( outputStr1 ); }
+/********************************************************/
+/*******                Example 01                *******/
+/********************************************************/
+    // get the strings
+        function getSentence( iArr, iSng ) {
+            let iArrStr = "";
 
-// output
-    function output( outputStr1 ) { console.log( outputStr1 ); }
-
-// get the strings
-    function getSentence( iArr, iSng ) {
-        let iArrStr = "";
-
-        for ( let i = 0; i < iArr.length; i ++ ) {
-            if ( i < iArr.length - 1 ) {
-                iArrStr += iArr[ i ] + " ";
-             } else {
-                iArrStr += iArr[ i ];
-             }
-         }
-         return iArrStr + getMarks( iSng );        
-    }
-// get the marks
-    function getMarks( iSng ) {
-        switch ( iSng ) {
-            case "Q":
-                return "?";
-            case "E":
-                return "!";
-            default:
-                return ".";
+            for ( let i = 0; i < iArr.length; i ++ ) {
+                if ( i < iArr.length - 1 ) {
+                    iArrStr += iArr[ i ] + " ";
+                } else {
+                    iArrStr += iArr[ i ];
+                }
+            }
+            return iArrStr + getMarks( iSng );        
         }
-    }
+
+    // get the marks
+        function getMarks( iSng ) {
+            switch ( iSng ) {
+                case "Q":
+                    return "?";
+                case "E":
+                    return "!";
+                default:
+                    return ".";
+            }
+        }
