@@ -23,10 +23,10 @@
 /*******                Example 01                *******/
 /********************************************************/
     // mögliche Tests:
-        // output( getSentence1( [ "Ich", "bin", "Max" ], "S" ) );
-        // output( getSentence1( [ "Bist", "du", "Max" ], "Q" ) );
-        // output( getSentence1( [ "Ich", "bin" ],"E" ) );
-        // output( getSentence1( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
+        output( getSentence1( [ "Ich", "bin", "Max" ], "S" ) );
+        output( getSentence1( [ "Bist", "du", "Max" ], "Q" ) );
+        output( getSentence1( [ "Ich", "bin" ],"E" ) );
+        output( getSentence1( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
 
     // get the strings
         function getSentence1( iArr, iSng ) {
@@ -58,10 +58,10 @@
 /*******                Example 02                *******/
 /********************************************************/
     // mögliche Tests:
-        // output( getSentence2( [ "Ich", "bin", "Max" ], "S" ) );
-        // output( getSentence2( [ "Bist", "du", "Max" ], "Q" ) );
-        // output( getSentence2( [ "Ich", "bin" ],"E" ) );
-        // output( getSentence2( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
+        output( getSentence2( [ "Ich", "bin", "Max" ], "S" ) );
+        output( getSentence2( [ "Bist", "du", "Max" ], "Q" ) );
+        output( getSentence2( [ "Ich", "bin" ],"E" ) );
+        output( getSentence2( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
 
     // get the strings
         function getMarks2( iArr, iSng ) {
@@ -93,10 +93,10 @@
 /*******                Example 03                *******/
 /********************************************************/
     // mögliche Tests:
-        // output( getSentence3( [ "Ich", "bin", "Max" ], "S" ) );
-        // output( getSentence3( [ "Bist", "du", "Max" ], "Q" ) );
-        // output( getSentence3( [ "Ich", "bin" ],"E" ) );
-        // output( getSentence3( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
+        output( getSentence3( [ "Ich", "bin", "Max" ], "S" ) );
+        output( getSentence3( [ "Bist", "du", "Max" ], "Q" ) );
+        output( getSentence3( [ "Ich", "bin" ],"E" ) );
+        output( getSentence3( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
 
     // get the strings
     function getSentence3( iArr, iSng ) {
@@ -113,10 +113,10 @@
 /*******                Example 04                *******/
 /********************************************************/
     // mögliche Tests:
-        // output( getSentence4( [ "Ich", "bin", "Max" ], "S" ) );
-        // output( getSentence4( [ "Bist", "du", "Max" ], "Q" ) );
-        // output( getSentence4( [ "Ich", "bin" ],"E" ) );
-        // output( getSentence4( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
+        output( getSentence4( [ "Ich", "bin", "Max" ], "S" ) );
+        output( getSentence4( [ "Bist", "du", "Max" ], "Q" ) );
+        output( getSentence4( [ "Ich", "bin" ],"E" ) );
+        output( getSentence4( [ "Ich", "hätt", "gern", "die", "Platt", "von", "dene", "zwei", "diwodaso", "Spass", "mache,", "habbe", "Sie", "die" ], "Q" ) );
 
     // get the strings
     function getSentence4( iArr, iSng, iArrStr = "" ) {
